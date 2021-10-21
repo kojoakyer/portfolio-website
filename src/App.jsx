@@ -1,11 +1,11 @@
-import logo from './logo.svg';
+
 import './app.scss';
 import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header'
 import Portfolio from './components/Portfolio/Portfolio';
-import Works from './components/Works/Works';
 import Testimonials from './components/Testimonials/Testimonials';
 import Contact from './components/Contact/Contact';
+import Technology from './components/Technology/Technology';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <div className="section">
         <Header/>
         <Portfolio/>
-        <Works/>
+        <Technology/>
         <Testimonials/>
         <Contact/>
       </div>

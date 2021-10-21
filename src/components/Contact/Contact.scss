@@ -3,7 +3,7 @@
 .contacts{
     // width: 100%;
     // height: 700px;
-    padding: 15rem 0;
+    padding: 10rem 0;
     background-image: linear-gradient(to right bottom, lightblue, blue);
     display: flex;
     align-items: center;
@@ -28,8 +28,8 @@
 
         @include mobile{
             background-image:linear-gradient(105deg, rgba(white, 0.9)0%,rgba(#ffff, 0.9) 90%,transparent 50%) ,url('img7.jpg');
-            width: 30rem; 
-            height: 70rem;           
+            width: 25rem; 
+            height: 60rem;           
         }
 
         .hero-heading{
@@ -90,6 +90,10 @@
                 border-bottom: 4px solid transparent;
                 width: 100%;
                 display: block;
+                @include mobile{
+                    font-size: 1rem;
+                    padding: 1rem 1.5rem;
+                }
 
                 &:focus{
                     outline: none;
@@ -118,6 +122,10 @@
                 height: 100px;
                 display: block;
 
+                @include mobile{
+                    font-size: 1rem;
+                    padding: 1rem 1.5rem;
+                }
                 &:focus{
                     outline: none;
                     box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .1);
@@ -132,6 +140,10 @@
                 display: block;
                 margin-top: .7rem;
                 transition: all .3s;
+                @include mobile{
+                    font-size: 1rem;
+                    margin-left: 1.5rem;
+                }
             }
 
             &__input:placeholder-shown + &__label{
@@ -153,6 +165,12 @@
                 border: none;
                 text-transform: uppercase;
                 cursor: pointer;
+                @include mobile{
+                    font-size: 1.3rem;
+                    padding: .5rem 1rem;
+                    margin-left: 20px;
+                    width: 50%;
+                }
 
                 &:hover{
                     transform: translateY(-3px);

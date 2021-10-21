@@ -16,29 +16,30 @@ function Testimonials() {
             id:'2',
             icon:'./assets/img4.jpg',
             name:'Dan Lok',
-            title:'CEO of Yokd INC',
+            title:'CEO Branded Inc',
             desc:'lorem ipseun m ipsum dolor sit amet consectetur adipisicing elit. Sed, architecto delenistrum voluptatum.',
             img: './assets/img4.jpg'
         },
         {
             id:'3',
             icon:'./assets/img5.jpg',
-            name:'Pearl Agbove',
-            title:'CEO labbelle',
+            name:'Andre Ansah',
+            title:'CEO Creanos Imc',
             desc:'lorem ipseu Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, architecto delenistrum voluptatum. ',
             img: './assets/img2.jpg'
         },
     ]
     return (
         <div className='testimonials' id='testimonials' >
+            <h1>Testimonials</h1>
           <div className="test_container">
               {data.map((d, index)=>{
                   return(
                    <div className="card">
                       <div className="top">
-                        <i className='fas fa-angle-right'></i>
+                        <i className='fab fa-twitter'></i>
                         <img className='userImg' src={d.img} alt="" />
-                        <i className='fab fa-youtube'></i>
+                        <i className='fab fa-linkedin'></i>
                       </div>
                      <div className="center">
                       {d.desc}

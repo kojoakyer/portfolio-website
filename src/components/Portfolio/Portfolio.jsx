@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { brandingPorfolio, designPorfolio, featuredPorfolio, mobilePorfolio, webPorfolio } from './Data'
+import { frontendapps,backendapps , featuredapps} from './Data'
 import './Portfolio.scss'
 import PortfolioList from './PortfolioList'
 
@@ -14,43 +14,26 @@ function Portfolio() {
             title:'Feature'
         },
         {
-            id:'web app',
-            title:'Web App'
+            id:'frontend',
+            title:'frontend apps'
         },
         {
-            id:'design',
-            title:'Design'
-        },
-        {
-            id:'mobile app',
-            title:'Mobile App'
-        },
-        {
-            id:'branding',
-            title:'Branding'
+            id:'backend',
+            title:'backend apps'
         }
     ]
 
     useEffect(()=>{
 
         switch(selected){
-            case 'feature':
-                setData(featuredPorfolio);
+            case 'frontend':
+                setData(frontendapps);
                 break;
-            case 'web app':
-                setData(webPorfolio);
+            case 'backend':
+                setData(backendapps);
                 break;   
-            case 'design':
-                setData(designPorfolio);
-                break;
-            case 'mobile app':
-                setData(mobilePorfolio);
-                break;
-            case 'branding':
-                setData(brandingPorfolio);
-                break; 
             default:
-                setData(featuredPorfolio);
+                setData(featuredapps);
         }
 
     },[selected])
@@ -60,7 +43,7 @@ function Portfolio() {
 
     return (
         <div className='portfolio' id='portfolio'> 
-           <h1>Portfolio</h1>
+           <h1>Projects</h1>
            <ul>
                {List.map((item, index)=>{
                    return(
@@ -72,9 +55,29 @@ function Portfolio() {
               {data.map((d, index)=>{
                   return(
                     <div className="item">
-                    <img src={d.img} alt="" />
-                    <h3>{d.title}</h3>
-                </div>
+                         <div className="imgContainer">
+                             <img src={d.img} alt="" />
+                         </div>
+                         <h3>{d.title}</h3>
+                         <div className="descContainer">
+                            <p>{d.descr}</p>
+                         </div>
+                         <div className="stack"><h4>stack</h4></div>
+                         <div className="tagContainer">
+                             {d.tag.map((t, index)=>{
+                                 return(
+                                     <ul>
+                                         <li>{t}</li>
+                                     </ul>
+                                 )
+                             })}
+                         </div>
+                         <div className="utilityList">
+                             <a href={d.visit}>code</a>
+                             <a href={d.source}>Source</a>
+                         </div>
+                         
+                    </div>
                   )
               })}
 

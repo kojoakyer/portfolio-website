@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Navbar.scss'
-import {Person, Mail} from '@material-ui/icons'
+import {Person, Mail, LinkedIn, GitHub, Twitter} from '@material-ui/icons'
 
 function Navbar() {
 
@@ -27,6 +27,11 @@ function Navbar() {
                         <Mail className='icon'/>
                         <span>kojoakyer777@gmail.com</span>
                     </div>
+                    <div className="itemContainer2">
+                        <a href='https://github.com/kojoakyer' className='icons'>   <GitHub   /></a>
+                        <a href='https://twitter.com/kojoakyer'>   <Twitter href='' className='icons' /></a>
+                        <a href='https://www.linkedin.com/in/kojo-akyer-a0a61a1b4/'>   <LinkedIn href='' className='icons' /></a>
+                    </div>
                 </div>
                 <div className="right">
                     <div className="hamburger" onClick={handleClick}>
@@ -41,16 +46,16 @@ function Navbar() {
                                 <a href="#header">Header</a>
                             </li>
                             <li onClick={closeMobileMenu}>
-                               <a href="#portfolio">Portfolio</a>
+                               <a href="#portfolio">Projects</a>
                             </li>
                             <li onClick={closeMobileMenu}>
-                               <a href="#works">Work</a>
+                               <a href="#technology">Technologies</a>
                             </li>
                             <li onClick={closeMobileMenu}>
                                 <a href="#testimonials">Testimonials</a>
                             </li>
                             <li onClick={closeMobileMenu}>
-                               <a href="#contact">Contacts</a>
+                               <a href="#contact">Contact</a>
                             </li>
                         </ul>
           
