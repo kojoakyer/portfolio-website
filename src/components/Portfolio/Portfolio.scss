@@ -76,12 +76,13 @@
 
             h3{
                 position: absolute;
-                top: 47%;
+                top: 50%;
                 margin-top: 15px;
                 font-size: 20px;
                 color: black;
                 @include mobile{
                     margin-bottom: -15px;
+                    top: 47%;
                 }
             }
             .imgContainer{

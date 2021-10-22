@@ -12,6 +12,7 @@ function Technology() {
             <div className="list">
                 <div className="listItem">
                     <div className="listContainer">
+                        <img src="assets/frondend1.png" alt="" />
                         <div className="listTitle">Front-end</div>
                         <div className="listPara">
                             Experience with <br/>
@@ -29,6 +30,7 @@ function Technology() {
                 </div>
                 <div className="listItem">
                     <div className="listContainer">
+                        <img src="assets/backend.jpg" alt="" /> 
                         <div className="listTitle">Back-end</div>
                         <div className="listPara">
                             Experience with <br/>
@@ -49,6 +51,7 @@ function Technology() {
 
                 <div className="listItem">
                     <div className="listContainer">
+                    <img src="assets/database.png" alt="" />
                         <div className="listTitle">Database</div>
                         <div className="listPara">
                             Experience with <br/>

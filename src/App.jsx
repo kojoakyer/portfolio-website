@@ -6,6 +6,7 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Testimonials from './components/Testimonials/Testimonials';
 import Contact from './components/Contact/Contact';
 import Technology from './components/Technology/Technology';
+import AboutTimeline from './components/About/AboutTimeline';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className="section">
         <Header/>
         <Portfolio/>
+        <AboutTimeline/>
         <Technology/>
         <Testimonials/>
         <Contact/>

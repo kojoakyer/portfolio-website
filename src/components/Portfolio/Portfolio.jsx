@@ -11,15 +11,15 @@ function Portfolio() {
     const List =[
         {
             id:'feature',
-            title:'Feature'
+            title:'Featured-Apps'
         },
         {
             id:'frontend',
-            title:'frontend apps'
+            title:'Frontend-Apps'
         },
         {
             id:'backend',
-            title:'backend apps'
+            title:'Backend-Apps'
         }
     ]
 

@@ -2,10 +2,11 @@
 
 .testimonials{
 
-    width: 100%;
+    width: 100vw;
     height: 950px;
     background-image: linear-gradient(to right bottom, lightblue, blue);
     padding: 10rem 0rem;
+    overflow: hidden;
 
     h1{
         font-size: 50px;

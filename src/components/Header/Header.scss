@@ -1,10 +1,11 @@
 @import '../../global.scss';
 
 .header{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color:#fff;
     display: flex;
+    overflow: hidden;
 
     @include mobile{
         flex-direction: column;
@@ -13,6 +14,7 @@
 
     .left{
         flex: 0.5;
+        width: 100%;
         overflow: hidden;
         position: relative;
 
