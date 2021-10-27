@@ -1,7 +1,7 @@
 import React,{useEffect, useRef} from 'react'
 import './Header.scss'
 import { init } from 'ityped'
-import { ArrowDownward, Download } from '@material-ui/icons';
+import { ArrowDownward,} from '@material-ui/icons';
 
 
 function Header() {
