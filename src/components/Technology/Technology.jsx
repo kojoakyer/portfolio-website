@@ -8,7 +8,15 @@ function Technology() {
             <div className="sectionTitle">
                 <h1>Technologies</h1>
             </div>
-            <div className="sectionText"><p> I have worked with a range of technologies in web development. I have experience with both frontend and backend</p></div>
+            <div className="sectionText">
+            <h4>From the moment I created  my first project in python, 
+                I knew I was hooked in the world of software development.  Software development has never been ‘just a job’ for me, 
+                it’s offered an engaging challenge to continually learn and improve my skill in creating high-quality software. What began with 
+                a simple 'calculator in python' has become a full-fledged passion that only gets more exciting as time goes by. </h4>
+            </div>
+            <div className="sectionText">
+                <p> I have worked with a range of technologies in web development. 
+                    I have experience with both frontend and backend</p></div>
             <div className="list">
                 <div className="listItem">
                     <div className="listContainer">

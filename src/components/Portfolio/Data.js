@@ -11,7 +11,7 @@ export const frontendapps =[
     {
         id:2,
         title:'Labelle website',
-        descr:'labelle website is an ushering and event hosting website where customers can book their services through the website, as well those who want to joint the organization can also do that through the website',
+        descr:'labelle website is an ushering and event hosting website where customers can book their services through the website, as well those who want to join the organization can also do that through the website',
         img:'assets/IMG_0233.jpg',
         tag:['mongo','react'],
         visit:'https://github.com/kojoakyer',
@@ -20,7 +20,7 @@ export const frontendapps =[
     {
         id:3,
         title:'E-commence website',
-        descr:'This is an e-commence website, where ccustomers can purchase items , and also make payment using their credit card',
+        descr:'This is an e-commerce website, where ccustomers can purchase items , and also make payment using their credit card',
         img:'assets/IMG_0234.jpg',
         tag:['mongo','react'],
         visit:'https://github.com/kojoakyer',

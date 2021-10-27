@@ -15,11 +15,11 @@ function Portfolio() {
         },
         {
             id:'frontend',
-            title:'Frontend-Apps'
+            title:'PROJECT 1-Apps'
         },
         {
             id:'backend',
-            title:'Backend-Apps'
+            title:'PROJECT 2-Apps'
         }
     ]
 

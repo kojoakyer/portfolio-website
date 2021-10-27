@@ -1,6 +1,8 @@
 import React,{useEffect, useRef} from 'react'
 import './Header.scss'
 import { init } from 'ityped'
+import { ArrowDownward, Download } from '@material-ui/icons';
+
 
 function Header() {
 
@@ -27,6 +29,12 @@ function Header() {
             <div className="right">
                 <div className="wrapper">
                     <h2>Hello, my name is</h2>
+                    <a href='assets/AKYER-KOJO.pdf' target="_blank" rel="noopener noreferrer" download>
+                       <button>
+                             Download Resume
+                             <ArrowDownward/>
+                       </button>
+                   </a>
                     <h1>Kojo Akyer</h1>
                     <h3>I'm a freelance software developer, I build full-stack web application to meet your needs.</h3>
                     <h3><span ref={textRef}></span></h3>
