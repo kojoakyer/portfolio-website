@@ -1,18 +1,17 @@
 import React from 'react'
 import './Post.css'
-import {Link} from 'react-router-dom'
 import { data } from './BlogData'
 
-function Post({post}) {
-  const PF = 'http://localhost:5000/images/'
+function Post() {
+
 
   return (
     <>
-    {data.map((post, index)=>{
+    {data.map((post)=>{
       return(
         <div className='post'>
         <div className="imgContainer">
-            <img className='postImg' src={post.img}/>
+            <img className='postImg' src={post.img} alt=''/>
         </div>
       
         <div className="postInfo">

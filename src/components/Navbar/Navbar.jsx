@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Navbar.css'
-import {Person, Mail, LinkedIn, GitHub, Twitter} from '@material-ui/icons'
+
 
 function Navbar() {
 
