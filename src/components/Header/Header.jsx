@@ -21,25 +21,20 @@ function Header() {
     return (
         <div className='header' id='header'>
             <div className="left">
-                <h1>WELCOME</h1>
-                <div className="imgContainer">
-                    <img src="assets/microsoft.jpg" alt="" />
-                </div>
             </div>
             <div className="right">
-                <div className="wrapper">
-                    <h2>Hello, my name is</h2>
-                    <a href='assets/AKYER-KOJO.pdf' target="_blank" rel="noopener noreferrer" download>
+
+            </div>
+            <div className="wrapper">
+                    <h2>HEY ! I AM</h2>
+                    {/* <a href='assets/AKYER-KOJO.pdf' target="_blank" rel="noopener noreferrer" download>
                        <button>
                              Download Resume
                              <ArrowDownward/>
                        </button>
-                   </a>
+                   </a> */}
                     <h1>Kojo Akyer</h1>
-                    <h3>I'm a freelance software developer, I build full-stack web application to meet your needs.</h3>
-                    <h3><span ref={textRef}></span></h3>
-
-                </div>
+                    <h3>I'm <span ref={textRef}></span></h3>
             </div>
         </div>
     )

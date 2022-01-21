@@ -1,209 +1,127 @@
 @import '../../global.scss';
 
 .contacts{
-    width: 100vw;
+    background-color: rgb(51, 50, 50);
+    width: 100%;
     // height: 700px;
-    padding: 10rem 0;
-    background-image: linear-gradient(to right bottom, lightblue, blue);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    padding: 5rem 0;
+    position: relative;
 
-    .book{
-        background-image:linear-gradient(105deg, rgba(white, 0.9)0%,rgba(#ffff, 0.9) 60%,transparent 50%) ,url('windows.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        border-radius: 10px;
-        box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: 0.2);
-        height: 60rem;
-        width: 90rem;
-        &__form{
-            width: 50%;
-            padding: 5rem;
-            @include mobile{
-                padding: 0; 
-                width: 100%;        
-            }
-            
+    .hero-heading{
+        position: absolute;
+        top: 0;
+        left: 40%;
+
+        h1{
+            color: #fff;
         }
+    }
 
+    .mainContainer{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20rem;
+        color: #fff;
         @include mobile{
-            background-image:linear-gradient(105deg, rgba(white, 0.9)0%,rgba(#ffff, 0.9) 90%,transparent 50%) ,url('windows.jpg');
-            width: 22rem; 
-            height: 45rem;           
+           flex-direction: column;
+           align-items: flex-start;
+           padding: 0rem;
         }
 
-        .hero-heading{
-            margin-top: 35px;
-            margin-bottom: 70px;
-            margin-left: 50px;
-            display: flex;
-            justify-content: center;
+        .formContainer{
+            flex: 0.5;
             @include mobile{
-                padding-top: 50px;
-                // margin-left: -90px;
-            }
-        }
-        
-        .hero-heading .hero_h1{
-            display: inline-block;
-            background-image: linear-gradient(to right,lightblue, blue );
-            -webkit-background-clip: text;
-            letter-spacing: 2px;
-            transition: all .2s ease;
-            font-size: 3rem;
-            text-transform: uppercase;
-            font-weight: 700;
-            color: transparent;
-            font-family: 'Lato',sans-serif;
-            @include mobile{
-                letter-spacing: 0px;
-
-            }
-          }
-          
-          .hero-heading:hover{
-            transform: skewY(2deg) skewX(15deg) scale(1.1);
-            text-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
-          }
-          
-          .hero-heading .hero_h1{
-            //   color: lightblue;
-              font-size: 2.5rem;
-              @include mobile{
-                font-size: 1.2rem;
-            }
-           } 
-
-        .form{
-            &__group:not(:last-child){
-                margin-bottom: 2rem;
-
-                
-            }
-
-            &__input{
-                font-size: 1.5rem;
-                font-family: inherit;
-                padding: 1.5rem 2rem;
-                background-color: rgba($color: #fff, $alpha: .5);
-                border: none;
-                border-bottom: 4px solid transparent;
                 width: 100%;
-                display: block;
-                @include mobile{
-                    width: 80%;
-                    font-size: 1rem;
-                    padding: 1rem 1.5rem;
-                }
+             }
 
-                &:focus{
-                    outline: none;
-                    box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .1);
-                    border-bottom: 4px solid lightskyblue;
-                }
+            .form{
 
-                &::-webkit-input-placeholder{
-                    color: darkgray;
-                }
+                .hero-headings{
+                    margin-bottom: 3rem;
+                    margin-left: 1rem;
 
-                &:focus:invalid{
-                    color: orange;
-                    border-bottom: 4px solid orange;
-                }
-            }
-
-            &__textarea{
-                font-size: 1.5rem;
-                font-family: inherit;
-                padding: 1.5rem 2rem;
-                background-color: rgba($color: #fff, $alpha: .5);
-                border: none;
-                border-bottom: 4px solid transparent;
-                width: 100%;
-                height: 100px;
-                display: block;
-
-                @include mobile{
-                    width: 80%;
-                    font-size: 1rem;
-                    padding: 1rem 1.5rem;
-                }
-                &:focus{
-                    outline: none;
-                    box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .1);
-                    border-bottom: 4px solid lightskyblue;
-                }
-            }
-
-            &__label{
-                width: 100vw;
-                font-size: 1.2rem;
-                font-weight: 700;
-                margin-left: 2rem;
-                display: block;
-                margin-top: .7rem;
-                transition: all .3s;
-                @include mobile{
-                    width: 70%;
-                    font-size: 1rem;
-                    margin-left: 1.5rem;
-                }
-            }
-
-            &__input:placeholder-shown + &__label{
-                opacity: 0;
-                visibility: hidden;
-                transform: translateY(-4rem);
-            }
-
-            &__btn{
-                margin-top: 25px;
-                padding: 1rem 2rem;
-                background-color: lightskyblue;
-                border-radius: 30px;
-                font-size: 2rem;
-                font-weight: 700;
-                color: #fff;
-                transition: all .2s;
-                text-decoration: none;
-                border: none;
-                text-transform: uppercase;
-                cursor: pointer;
-                @include mobile{
-                    font-size: 1.3rem;
-                    padding: .5rem 1rem;
-                    margin-left: 20px;
-                    width: 50%;
-                }
-
-                &:hover{
-                    transform: translateY(-3px);
-                    box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .2);
-
-                    &::after{
-                        transform: scaleX(1.4) scaleY(1.6);
-                        opacity: 0;
+                    h1{
+                        font-size: 25px;
+                        font-weight: 400;
                     }
                 }
-                &:active,
-                &:focus{
-                    outline: none;
-                    transform: translateY(-1px);
-                    box-shadow: 0 0.5rem 1rem rgba($color: #000000, $alpha: 0.2);
+
+
+                .form__group{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px 1rem;
+
+                    .form__input{
+                        padding: 10px 20px;
+                        @include mobile{
+                            width: 90%;
+                        }
+                    }
+
+                    .form__textarea{
+                        width: 100%;
+                        height: 30vh;
+                    }
+                }
+                .form__btn{
+                    padding: 15px 25px;
+                    border-radius: 20px;
+                    border: none;
+                    font-size: .8rem;
+                    color: #fff;
+                    background-color: rgb(183, 235, 100);
+                    margin-top: 30px;
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        .Info{
+            flex: 0.5;
+            margin-left: 0rem;
+            padding-left: 4rem;
+            padding-bottom: 12rem;
+            @include mobile{
+                width: 100%;
+                padding: 0rem 1rem;     
+            }
+
+            .hero-headings{
+                padding-bottom: 4rem;
+                @include mobile{
+                    margin-top: 3rem;
+                    padding-bottom: 2rem;     
                 }
 
-            }
-            span{
-                color: blue;
-                display: block;
-                margin-top: 20px;
-                font-size: 1.5rem;
+                h1{
+                    font-size: 25px;
+                    font-weight: 400;
+                }
             }
 
+            .infoTitle{
+                padding-top: 20px;
+                h2{
+                    font-size: .8rem;
+                    color: rgb(4, 28, 107);
+                    padding-bottom: 10px;
+                }
+                p{
+                    ul{
+                        list-style: none;
+                        padding-right: 20px;
 
-        }   
+                        li{
+                            margin-right: 20px;
+                            padding-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
     }
+
+
 }

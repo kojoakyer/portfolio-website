@@ -1,4 +1,4 @@
-import React from 'react'
+ import React from 'react'
 import './PortfolioList.scss'
 
 function PortfolioList({title ,id, active, setselected }) {

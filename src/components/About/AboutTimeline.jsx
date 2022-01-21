@@ -8,7 +8,10 @@ import { School } from '@material-ui/icons';
 function AboutTimeline() {
     return (
         <div className='about'>
-            <h1 className='heading'>My Journey As a Developer</h1>
+            <div className="headingContainer">
+                 <h2 className='heading'>My <span className='span'>Journey</span></h2>
+            </div>
+          
 
             <VerticalTimeline>
                 {timelineData.map((element, index)=>{

@@ -7,6 +7,9 @@ import Testimonials from './components/Testimonials/Testimonials';
 import Contact from './components/Contact/Contact';
 import Technology from './components/Technology/Technology';
 import AboutTimeline from './components/About/AboutTimeline';
+import Footer from './components/Footer/Footer';
+import Blog from './components/Blog/Blog';
+import Skills from './components/Skills/Skills';
 
 function App() {
   return (
@@ -16,9 +19,12 @@ function App() {
         <Header/>
         <Portfolio/>
         <AboutTimeline/>
+        <Skills/>
         <Technology/>
         <Testimonials/>
+        <Blog/>
         <Contact/>
+        <Footer/>
       </div>
     </div>
   );

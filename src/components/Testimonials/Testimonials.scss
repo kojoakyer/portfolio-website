@@ -1,74 +1,86 @@
 @import '../../global.scss';
 
 .testimonials{
-
-    width: 100vw;
-    height: 950px;
-    background-image: linear-gradient(to right bottom, lightblue, blue);
-    padding: 10rem 0rem;
+    background-color: rgb(51, 50, 50);
+    width: 100%;
+    height: 100%;
+    padding: 0rem 0rem 5rem 0rem;
     overflow: hidden;
 
-    h1{
-        font-size: 50px;
+    h2{
+        font-size: 30px;
         color: #fff;
+        font-weight: 400;
         margin-top: 50px;
-        margin-left: 45%;
+        // margin-left: 40%;
+        margin-bottom: 5%;
         text-shadow: 2px 3px 0 rgba(10, 3, 2, 0.952);
+        display: flex;
+        justify-content: center;
+        align-items: center; 
         @include mobile{
-            font-size: 30px;
-            margin-left: 90px;      
+            font-size: 20px;
+        }
+
+        span{
+            font-size: 30;
+            font-weight: 800;
+            @include mobile{
+                font-size: 20px;
+                font-weight: 700;
+                padding-left: 5px;
+            }
         }
     }
     
     .test_container{
-        width: 100%;
-        height: 60%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 30px;
-        padding: 20px;
-        margin-top: 7%;
-        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 100px;
+        padding: 2rem 20rem;
         @include mobile{
-            flex-direction: column;
-            height:700px;
-            margin-bottom: 30px;
-            margin-right: 200px;
+            grid-template-columns: repeat(1,1fr);
+            height:100%;
+            padding:0rem 4rem;
+            grid-gap: 50px;
+       
         }
 
 
         .card{
-            width: 20vw;
-            height: 55vh;
+            position: relative;
+            border-left-color: black ;
+            width: 100%;
+            height: 100%;
             border-radius: 10px;
-            margin-right: 20px;
-            box-shadow: 0px 0px 15px -8px black;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            padding: 20px;
-            background-color: #fff;
+            background-color: rgb(68, 66, 66);
+
+            &::before{
+                top: -1.5rem;
+                right: 6rem;
+                border: .8rem solid transparent;
+                box-shadow: 0px 0px 15px -8px black;
+            }
             @include mobile{
-                width: 70vw;
-                height: 300px;
-                margin-right: 90px;
-                margin-top: 10px;
+                width: 100%;
+                height: 100%;
+             
                 justify-content: center;
 
             }
 
 
-        &:hover{
-            transform: scale(1.1);
-            transition: all 0.3s ease-out;
-            color: #1c2237;
-        }    
-
             .top{
+                position: absolute;
+                top: 0;
+                left: -100px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                @include mobile{
+                    left: -80px;
+    
+                }
 
                 .userImg {
                     height: 60px;
@@ -77,8 +89,8 @@
                     object-fit: cover;
                     margin: 0 30px;
                     @include mobile{
-                        height: 20px;
-                        width: 20px;
+                        height: 40px;
+                        width: 40px;
                         margin-bottom: 5px;
                     }
 
@@ -87,16 +99,11 @@
             }
 
             .center{
-                padding: 2.5rem;
-                background-color: rgb(75, 206, 250);
                 border-radius: 10px;
-                width: 80%;
-                height: 200px;
+                padding: 20px 30px;
                 color: #fff;
-                font-size: 20px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                font-size: .8rem;
+                line-height: 30px;
                 @include mobile{
                     padding: 10px;
                     height: 80px;
@@ -105,22 +112,20 @@
             }
 
             .bottom{
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                justify-content: center;
+                padding: 0px 25px;
+                color: #fff;
+                font-size: 15px;
+                font-weight: 300;
                 @include mobile{
                     font-size: 10px;
-                    margin-top: 5px;
-                }
-
-                h3{
-                    margin-bottom: 5px;
+                    margin-top: 30px;
                 }
 
                 h4{
-                    color: #ed50f1;
+                    margin-bottom: 15px;
                 }
+
+                
             }
         }
 

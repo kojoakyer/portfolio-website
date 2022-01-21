@@ -15,11 +15,11 @@ function Portfolio() {
         },
         {
             id:'frontend',
-            title:'PROJECT 1-Apps'
+            title:'Fullstack-Apps'
         },
         {
             id:'backend',
-            title:'PROJECT 2-Apps'
+            title:'Frontend-Apps'
         }
     ]
 
@@ -43,7 +43,7 @@ function Portfolio() {
 
     return (
         <div className='portfolio' id='portfolio'> 
-           <h1>Projects</h1>
+           <h2>Featured <span>Portfolio</span></h2>
            <ul>
                {List.map((item, index)=>{
                    return(
@@ -58,21 +58,8 @@ function Portfolio() {
                          <div className="imgContainer">
                              <img src={d.img} alt="" />
                          </div>
-                         <h3>{d.title}</h3>
-                         <div className="descContainer">
-                            <p>{d.descr}</p>
-                         </div>
-                         <div className="stack"><h4>stack</h4></div>
-                         <div className="tagContainer">
-                             {d.tag.map((t, index)=>{
-                                 return(
-                                     <ul>
-                                         <li>{t}</li>
-                                     </ul>
-                                 )
-                             })}
-                         </div>
-                         <div className="utilityList">
+                         <div className="portfolioDesc">
+                             <h3>{d.title}</h3>
                              <a href={d.visit}>code</a>
                              <a href={d.source}>Source</a>
                          </div>

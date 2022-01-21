@@ -1,0 +1,44 @@
+
+.mainCon{
+    background-color: rgb(51, 50, 50);
+    padding: 5rem 0rem;
+    margin-top: -5rem;
+    padding-bottom: 10rem;
+    
+}
+
+.blog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.blogTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.blogTitle h1{
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 960px) {
+
+    .blog{
+        flex-direction: column;
+    }
+
+    .blogTitle{
+       margin-top: 5rem;
+        margin-bottom: 100px;
+    }
+
+
+
+    
+}
