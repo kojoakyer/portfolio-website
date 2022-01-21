@@ -9,11 +9,9 @@ function Footer() {
                 <p>Copyright © 2022 All rights reserved | portfolio website for kojo</p>
             </div>
             <div className="social-icons">
-                <a href=""><Twitter/> </a>
-                <a href=""><Facebook/> </a>
-                <a href=""><LinkedIn/> </a>
-                <a href=""><GitHub/> </a>
-                <a href=""><Mail/> </a>
+                <a href="https://twitter.com/kojoakyer"><Twitter/> </a>
+                <a href="https://www.linkedin.com/in/kojo-akyer-a0a61a1b4/"><LinkedIn/> </a>
+                <a href="https://github.com/kojoakyer"><GitHub/> </a>
             </div>
         </div>
     )
