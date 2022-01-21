@@ -1,5 +1,5 @@
 import React from 'react'
-import { Mail, Twitter, LinkedIn, GitHub, Facebook} from '@material-ui/icons'
+import { Twitter, LinkedIn, GitHub} from '@material-ui/icons'
 import './Footer.scss'
 
 function Footer() {
