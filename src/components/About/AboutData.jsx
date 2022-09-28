@@ -23,7 +23,7 @@ export const timelineData = [
        title:'Front-End Development',
        description:'I went through the fundamentals of html, css and advance css ',
        School:'Team Treehouse',
-       date:'2020 - present',
+       date:'',
        icon: ShutterSpeedSharp,
    },
    {
@@ -31,7 +31,7 @@ export const timelineData = [
        title:'Back-End Development',
        description:'I began learning node.js and express, as well as using CRUD functionality in mongodb and sql databases',
        School:'Udemy',
-       date:'October 2020 - present',
+       date:'October 2019 - present',
        icon: ShutterSpeedSharp,
    },
    {
@@ -39,7 +39,7 @@ export const timelineData = [
       title:'Responsive Web Development',
       description:'Creating responsive and user friendly web pages',
       School:'Udemy',
-      date:'July 2021 - present',
+      date:'',
       icon: ShutterSpeedSharp,
    },
 ]
